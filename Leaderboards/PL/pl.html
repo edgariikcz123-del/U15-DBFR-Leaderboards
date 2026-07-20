@@ -207,7 +207,31 @@
     </div>
 
     <div class="avatar">
-        <img src="../../images/mrnoob.png" alt="Fourth">
+        <img src="../../images/sponge.png" alt="Fourth">
+    </div>
+
+    <div class="player-name">
+        Sponge
+    </div>
+
+    <div class="rank-name">
+        D-Rank│Rookie
+    </div>
+
+    <div class="player-points">
+        293,462,498
+    </div>
+
+</div>
+
+<div class="leaderboard-bar5" data-player="4">
+
+    <div class="rank-badge">
+        <span>#5</span>
+    </div>
+
+    <div class="avatar">
+        <img src="../../images/mrnoob.png" alt="">
     </div>
 
     <div class="player-name">
@@ -220,30 +244,6 @@
 
     <div class="player-points">
         280,242,378
-    </div>
-
-</div>
-
-<div class="leaderboard-bar5" data-player="4">
-
-    <div class="rank-badge">
-        <span>#5</span>
-    </div>
-
-    <div class="avatar">
-        <img src="../../images/5th.png" alt="">
-    </div>
-
-    <div class="player-name">
-        
-    </div>
-
-    <div class="rank-name">
-        
-    </div>
-
-    <div class="player-points">
-        
     </div>
 
 </div>
@@ -412,33 +412,30 @@ document.querySelectorAll(
 const popupBadge = popup.querySelector(".popup-rank-badge");
 
 
-popupBar.classList.remove("gold", "silver", "bronze");
-popupBadge.classList.remove("gold", "silver", "bronze");
+popupBar.classList.remove("gold", "silver", "bronze", "fourth");
+popupBadge.classList.remove("gold", "silver", "bronze", "fourth");
 
-
-if(player.rank === "#1"){
+if (player.rank === "#1") {
 
     popupBar.classList.add("gold");
     popupBadge.classList.add("gold");
 
 }
-
-else if(player.rank === "#2"){
+else if (player.rank === "#2") {
 
     popupBar.classList.add("silver");
     popupBadge.classList.add("silver");
 
 }
-
-else if(player.rank === "#3"){
+else if (player.rank === "#3") {
 
     popupBar.classList.add("bronze");
     popupBadge.classList.add("bronze");
 
 }
+else {
 
-else if(player.rank === "#4"){
-
+    // #4, #5, #6, #7, #8... all use the blue style
     popupBar.classList.add("fourth");
     popupBadge.classList.add("fourth");
 
