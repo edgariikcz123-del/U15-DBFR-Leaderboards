@@ -75,20 +75,20 @@ const leaderboard = [
 
 {
     rank: "#4",
-    playerName: "Existinghuman",
-    pl: 280242378,
+    playerName: "Sponge",
+    pl: 293462498,
     race: "images/Saiyan.png",
     joinDate: "2025-04-05",
-    avatar: "images/mrnoob.png"
+    avatar: "images/sponge.png"
 },
 
 {
     rank:"#5",
-    playerName:"Fifth",
-    pl:0,
-    race:"images/<nobody>.png",
+    playerName:"Existinghuman",
+    pl:280242378,
+    race:"images/Saiyan.png",
     joinDate:"2025-05-01",
-    avatar:"images/5th.png"
+    avatar:"images/mrnoob.png"
 },
 
 {
